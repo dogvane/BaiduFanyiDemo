@@ -59,7 +59,6 @@ namespace BaiduFanyi
             sb.Append("&to=").Append(to);
             sb.Append("&appid=").Append(appid);
             var salt = DateTime.Now.Ticks.ToString();
-            salt = "14967406875006";
             sb.Append("&salt=").Append(salt);
 
             var signSource = new StringBuilder();
